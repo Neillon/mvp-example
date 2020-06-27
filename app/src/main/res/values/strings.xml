@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Actions</string>
+
+    <string name="menu_add_action">Add Action</string>
+</resources>
