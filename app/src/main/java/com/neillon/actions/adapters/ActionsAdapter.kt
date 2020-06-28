@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.neillon.actions.R
-import com.neillon.actions.contracts.ActionItemContract
+import com.neillon.actions.contracts.ItemContract
 import com.neillon.actions.contracts.MainContract
 import com.neillon.actions.enum.Actions
 import kotlinx.android.synthetic.main.item_action.view.*
@@ -30,7 +30,7 @@ class ActionsAdapter(var presenter: MainContract.PresenterInterface) :
      * ViewHolder
      */
     inner class ActionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
-        ActionItemContract {
+        ItemContract {
 
         override fun changeAirplaneIcon(isAirplaneModeActive: Boolean) {
             if (isAirplaneModeActive) {

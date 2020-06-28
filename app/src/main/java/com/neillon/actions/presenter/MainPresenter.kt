@@ -1,6 +1,6 @@
 package com.neillon.actions.presenter
 
-import com.neillon.actions.contracts.ActionItemContract
+import com.neillon.actions.contracts.ItemContract
 import com.neillon.actions.contracts.MainContract
 import com.neillon.actions.enum.Actions
 import com.neillon.actions.model.Action
@@ -23,7 +23,7 @@ class MainPresenter(
 
     override fun userInfo() {}
 
-    override fun onBindActionsHolder(position: Int, holder: ActionItemContract) {
+    override fun onBindActionsHolder(position: Int, holder: ItemContract) {
         val action = actions[position]
 
         holder.bindClick {
